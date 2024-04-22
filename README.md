@@ -1,3 +1,5 @@
+![image](https://github.com/Nihalahamad1905/Depression_Detection_Using_Machine-Learning/assets/118530992/e0487778-6e04-4609-893a-e900b7a02986)
+
 # Introduction
 Depression detection using machine learning is a vital area of research given the global burden of mental health disorders. This project explores two primary methodologies: leveraging depression quiz tests and analyzing sentences. Depression quizzes, established diagnostic tools, provide structured assessments of individuals' emotional states. By employing machine learning algorithms trained on data from these quizzes, we aim to classify individuals as either depressed or non-depressed based on their responses.
 Furthermore, the project delves into the analysis of natural language data. Individuals with depression often exhibit distinct linguistic patterns, including increased usage of negative words and expressions of sadness. Machine learning models trained on large text datasets can learn to identify these patterns, enabling the classification of new text inputs as indicative of depression or not.
