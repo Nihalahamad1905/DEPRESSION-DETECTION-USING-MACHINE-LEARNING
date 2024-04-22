@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Aasha</title>
+  <meta name="description" content="De-tester a 2 minute depression test">
+  <meta name="keywords" content="depression test using Machine learning">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/font-awesome.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <!--banner-->
+  <section id="sbanner" class="banner">
+    <div class="bg-color">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="col-md-12">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+              <a class="navbar-brand" href="#"><img src="{{url_for('static',filename='img/bglogo.png')}}" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class=""><a href="/">Home</a></li>
+                <li class=""><a href="/">Quiz Based Test</a></li>
+                  <li class="active"><a href="/sentiment">Sentiment Based Test</a></li>
+                <li class=""><a href="#about">About</a></li>
+                <li class=""><a href="#footer">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="sbanner-info">
+            <div class="banner-logo text-center">
+              <img src="{{url_for('static',filename='img/bglogo.png')}}" class="img-responsive">
+            </div>
+            <div class="banner-text text-center">
+              <h1 class="white">2 Minute Depression Test</h1>
+              <p>Lets Understood what you are willing to Express !</p>
+              <a href="#service" class="btn btn-appoint">Take a Test.</a>
+            </div>
+            <div class="overlay-detail text-center">
+              <a href="#service"><i class="fa fa-angle-down"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ banner-->
+
+
+
+  <!--service-->
+  <form action="/predictSentiment" method="POST">
+  <section id="service" class="section-padding">
+    <div class="container">
+
+      <div class="row">
+          <div class="col-sm-12">
+              <h2 class="ser-title">Take a Test</h2>
+              <br>
+          </div>
+      </div><!--End of  row-->  
+
+        <form action="/predictSentiment" method="POST">
+        <div class="row">
+            <div class="col-md-8 col-sm-8">
+              <div class="md-form">
+                    <h5>Write something about how do you feel.</h5>
+                    <textarea  required="required" id="form10" name="form10" class="md-textarea form-control" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+            </div>
+        </div><!--End of row-->
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <br>
+                <button class="btn btn-primary" type="submit">See Result</button>
+            </div>
+        </div>
+        </form><!--End of form-->
+
+    </div>
+  </section>
+</form>
+  <!--/ service-->
+
+<!--cta-->
+<section id="cta-1" class="section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="schedule-tab">
+        <div class="col-md-12 col-sm-12">
+          <div class="mt-boxy-color"></div>
+          <div class="medi-info">
+            <h3>Emergency Case</h3>
+            <p>This information is not designed to replace a physician's independent judgment about the appropriateness or risks of a procedure for a given patient. Always consult your doctor about your medical conditions. Remedy Health Media & PsyCom do not provide medical advice, diagnosis or treatment. Use of this website is conditional upon your acceptance of our User Agreement. </p>
+            <a href="#" class="medi-info-btn">READ MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--cta-->
+<!--about-->
+<section id="about" class="section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-4 col-xs-12">
+        <div class="section-title">
+          <h2 class="head-title lg-line">The Applications <br>Ultimate Goal</h2>
+          <hr class="botm-line">
+          <p class="sec-para">Our deeply personal and emotionally captivating health stories, along with our medically verified content and tools, have the power to motivate and uplift millions of patients and caregivers, enabling them to lead healthier and happier lives..</p>
+          <a href="" style="color: #0cb8b6; padding-top:10px;">Know more..</a>
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-8 col-xs-12">
+        <div style="visibility: visible;" class="col-sm-9 more-features-box">
+          <div class="more-features-box-text">
+            <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+            <div class="more-features-box-text-description">
+              <h3>It's something important you want to know.</h3>
+              <p>We additionally suggest it would be prudent to start a conversation with your doctor.If you need help we strongly suggest that you reach out to to a qualified mental health professional listed in our directory of emergency mental health resources.</p>
+            </div>
+          </div>
+          <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+            <div class="more-features-box-text-description">
+              <h3>It's something important you want to know.</h3>
+              <p>The Antidepression Application is Developed by the team of D Y Patil Technical Campus, Faculty of Engineering, Facuty of Management, Talsande Students of the Third Year of Computer Science & Engineering Department 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ about-->  
+
+  <!--footer-->
+  <footer id="footer">
+    
+    <div class="footer-line">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+             Copyright © Nihal Shaikh | All Rights Reserved
+            <div class="credits">
+            
+              Designed and Developed by <a href="#">Nihal Shaikh</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--/ footer-->
+
+
+  <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/jquery.easing.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/custom.js')}}"></script>
+
+
+
+
+</body>
+
+</html>
