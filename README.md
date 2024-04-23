@@ -23,6 +23,10 @@ Feature Extraction: Extract relevant linguistic features from the preprocessed t
 Model Selection and Training: Experiment with various machine learning and natural language processing (NLP) models, such as logistic regression, recurrent neural networks (RNNs), or transformer-based architectures, to train models on the extracted linguistic features.
 Model Evaluation: Evaluate the trained models using appropriate NLP evaluation metrics, such as accuracy, precision, recall, and F1-score, on a separate validation dataset. Conduct error analysis to identify common misclassifications and areas for improvement.
 Model Deployment: Integrate the best-performing NLP model into the depression detection system, ensuring scalability and efficiency for processing new text inputs in real-time.
+
+## Accuracy
+![image](https://github.com/Nihalahamad1905/DEPRESSION-DETECTION-USING-MACHINE-LEARNING/assets/118530992/0d6d7850-ed2a-4cbd-a2c5-156212799e56)
+
 ## Login Credentials
 Username : admin
 Passward : admin
