@@ -25,7 +25,8 @@ Model Evaluation: Evaluate the trained models using appropriate NLP evaluation m
 Model Deployment: Integrate the best-performing NLP model into the depression detection system, ensuring scalability and efficiency for processing new text inputs in real-time.
 
 ## Accuracy
-![image](https://github.com/Nihalahamad1905/DEPRESSION-DETECTION-USING-MACHINE-LEARNING/assets/118530992/0d6d7850-ed2a-4cbd-a2c5-156212799e56)
+
+![image](https://github.com/Nihalahamad1905/DEPRESSION-DETECTION-USING-MACHINE-LEARNING/assets/118530992/989ae148-ec33-4d18-bcb7-781253756b54)
 
 ## Login Credentials
 Username : admin
